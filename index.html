@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Metadata-->
     <meta name="description" content="Established since 2009. Brings in a home feeling, friendly vibes with great coffee and varieties of delicious food and drinks.">
-    <!--Styles.css-->
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <!--Bootstrap CDN CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <!--Styles.css-->
+       <link rel="stylesheet" type="text/css" href="./styles/css/my-theme.css">
+       <!--Bootstrap.css-->
+       <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.css">
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/7a954a8238.js" crossorigin="anonymous"></script>
     <!--GoogleFonts-->
@@ -21,10 +21,6 @@
 <body>
     <div class="content">
 <div class="section-1">
-        <video preload="none" autoplay muted loop id="homeVideo">
-                <source src="./assets/homePgVid.MOV" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
               <div class="verticalMenu-hm" id="Topnav"> 
                     <div class="vert-links"> 
                             <a href="javascript:void(0);"><i class="fas fa-times exit-nav" onclick="ToggleNav()"></i></a> 
@@ -78,7 +74,8 @@
                     <div><a href="javascript:void(0);" class="icon" onclick="ToggleNav()">
                             <i class="fa fa-bars"></i></a></div>
                             <img src="/assets/logo-straight.png" style="width:11%; padding:5px 0 3px 0;" alt="small logo"/>
-                                <div class="float-right pr-2 d-flex">                        <a href="tel:0395272511" class="bookinglnk"><p>Make a booking</p></a>
+                                <div class="float-right pr-2 d-flex">                        
+                                    <a href="tel:0395272511" class="bookinglnk"><p>Make a booking</p></a>
                                     <a href="https://goo.gl/maps/QZJ4jsSbpPQ2yQTU6" target="_blank"><span class="sr-only">Open Location in Google Maps</span><i class="fas fa-map-marker-alt"></i></a>
                                         <a href="https://www.facebook.com/espressoetccaulfield/" target="_blank"><span class="sr-only">Open Facebook Page</span><i class="fab fa-facebook-f"></i></a>
                                             <a href="https://www.instagram.com/espressoetc/?hl=en" target="_blank"><span class="sr-only">Open Instagram Page</span><i class="fab fa-instagram"></i></a></div>
@@ -192,14 +189,36 @@
 AOS.init();
 </script>
 <script>
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function ToggleNav() {
-  var x = document.getElementById("Topnav");
-  if (x.className === "verticalMenu") {
-    x.classList.toggle("responsive")
-  } else {
-    x.className = "verticalMenu";
-  }
-}</script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function ToggleNav() {
+          var x = document.getElementById("Topnav");
+          if (x.className === "verticalMenu") {
+            x.classList.toggle("responsive")
+          } else {
+            x.className = "verticalMenu";
+          }
+        }
+         /*scroll reveal topnav bar*/
+         const nav = document.querySelector(".topnav")
+        const scrollUp = "scroll-up";
+        const scrollDown = "scroll-down";
+        let lastScroll = 0;
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll == 0){
+                nav.classList.remove(scrollUp);
+                return
+            }
+            if (currentScroll > lastScroll && !nav.classList.contains(scrollDown)){
+                nav.classList.remove(scrollUp);
+                nav.classList.add(scrollDown);
+            }else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)){
+                nav.classList.remove(scrollDown);
+                nav.classList.add(scrollUp);
+            }
+            lastScroll = currentScroll;
+        })
+        
+        </script>
 </body>
 </html>
