@@ -17,6 +17,6 @@ Espresso Etc is a client project for Melbourne-based cafe 'Espresso Etc'. This i
 - Some small changes to the stylings 
 - Email address removed from nodemailer and replaced with a dummy address, so submitting the form won't work.
 
-### Image and text source
-All rights to Espresso Etc images and text. 
+### Image source
+All rights to Espresso Etc for images belonging to Espresso Etc. 
 Some images taken from Unsplash.com.  
