@@ -9,11 +9,14 @@
        <!--Styles.css-->
        <link rel="stylesheet" type="text/css" href="./styles/css/my-theme.css">
        <!--Bootstrap.css-->
-       <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.css">
+       <link rel="stylesheet" type="text/css" href="./styles/css/
+       bootstrap.css">
+         <!--Lightbox-->
+    <link rel="stylesheet" href="./styles/css/simplelightbox.min.css"/>
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/7a954a8238.js" crossorigin="anonymous"></script>
     <!--GoogleFonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Rock+Salt&display=swap" rel="stylesheet">
     <title>Espresso Etc</title>
         <!--Animate on scroll-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -141,7 +144,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-right">
                 <div class="col-lg-6 coffee-text col-sm-12">
-                        <p class="px-5 py-5"> We deliver a true Italian espresso coffee experience from Genovese. Our baristas make mean coffees, with attention to detail, consistency and speed. We take pride in every cup served, and ensure that every little cup goes a long way…</p>
+                        <p class="px-5 py-5"> We deliver a true Italian espresso coffee experience from <a href="https://www.genovese.com.au/" target="_blank"><b><i>Genovese</i></b></a>. Our baristas make mean coffees, with attention to detail, consistency and speed. We take pride in every cup served, and ensure that every little cup goes a long way…</p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                         <img src="assets/IMG_4198.jpg" alt="coffeeimg" class="mainImg"/>
@@ -153,19 +156,22 @@
 <!--Gallery-->
 <div class="section-4 py-5">
     <div class="gallery container">
-       <img src="/assets/gallery1.png" alt="gallery1">
-       <img src="/assets/gallery2.png" alt="gallery2">
-       <img src="/assets/gallery3.png" alt="gallery3">
-       <img src="/assets/gallery4.png" alt="gallery4">
-       <img src="/assets/love, peace, and joy.png" alt="enjoyingyourday">
-       <img src="/assets/gallery5.png" alt="gallery5">
-       <img src="/assets/food.png" alt="foodfriendssunshine">
-       <img src="/assets/gallery11.png" alt="gallery11">
-       <img src="/assets/gallery8.png" alt="gallery8">
-       <img src="/assets/gallery7.png" alt="gallery7">
-       <img src="/assets/gallery6.png" alt="gallery6">
-       <img src="/assets/gallery9.png" alt="gallery9">
-       <img src="/assets/wake up.png" alt="wakeup">
+       <a href="/assets/gallery1.png"><img src="/assets/gallery1.png" alt="gallery1"></a>
+       <a href="/assets/gallery2.png"><img src="/assets/gallery2.png" alt="gallery2"></a>
+       <a href="/assets/gallery3.png"><img src="/assets/gallery3.png" alt="gallery3"></a>
+       <a href="/assets/gallery4.png"><img src="/assets/gallery4.png" alt="gallery4"></a>
+       <a href="/assets/love, peace, and joy.png"><img src="/assets/love, peace, and joy.png" alt="enjoyingyourday">
+       </a>
+       <a href="/assets/gallery5.png"><img src="/assets/gallery5.png" alt="gallery5"></a>
+       <a href="/assets/food.png"><img src="/assets/food.png" alt="foodfriendssunshine">
+       </a>
+       <a href="/assets/gallery11.png"> <img src="/assets/gallery11.png" alt="gallery11"></a>
+      <a href="/assets/gallery8.png"> <img src="/assets/gallery8.png" alt="gallery8">
+      </a>
+      <a href="/assets/gallery7.png" > <img src="/assets/gallery7.png" alt="gallery7"></a>
+      <a href="/assets/gallery6.png"><img src="/assets/gallery6.png" alt="gallery6"></a>
+       <a href="/assets/gallery9.png"> <img src="/assets/gallery9.png" alt="gallery9"> </a>
+      <a href="/assets/wake up.png"><img src="/assets/wake up.png" alt="wakeup"></a>
     </div>
 </div>
 </div>
@@ -188,6 +194,13 @@
 <script>
 AOS.init();
 </script>
+  <!--Simple light box JS-->
+  <script src="js/simple-lightbox.min.js"></script>
+  <script>
+   $(function(){
+     const $gallery = $('.gallery a').simpleLightbox(); 
+   })
+  </script>
 <script>
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function ToggleNav() {

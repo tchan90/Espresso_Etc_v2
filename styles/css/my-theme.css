@@ -8242,7 +8242,7 @@ body {
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 .content {
@@ -8267,7 +8267,6 @@ a:hover {
   left: 0;
   background-color: black;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
   display: block;
 }
@@ -8279,7 +8278,6 @@ a:hover {
   left: 0;
   background-color: black;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
   display: block;
 }
@@ -8428,7 +8426,8 @@ ul {
   width: 100%;
   display: flex;
   position: relative;
-  background: url("https://images.unsplash.com/photo-1439466654360-5e8bbd819be5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9") no-repeat bottom center/cover;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/a5074b8bbb6b585008e4350d6ff9706e/5E65A355/t51.2885-15/fr/e15/s1080x1080/50170709_381539549341458_3579791133051580140_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=106") no-repeat bottom center/cover;
+  background-position: 0 70%;
 }
 
 .socialinks {
@@ -8463,7 +8462,6 @@ ul {
   height: auto;
   max-height: 300px;
   margin-right: 20px;
-  font-family: "Roboto", sans-serif;
   padding-top: 50px;
   padding-bottom: 50px;
   display: inline-block;
@@ -8580,11 +8578,12 @@ ul {
 .section-3 {
   height: auto;
   width: auto;
-  background: url("/assets/foodfeature-bg.png") no-repeat bottom center/cover;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/edbb213827ff07dc288d87e6082a2f63/5E4AF826/t51.2885-15/fr/e15/s1080x1080/51243480_845732095769983_5684155962629249638_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=107") no-repeat bottom center/cover;
 }
 
 .overlay {
-  background-color: rgba(250, 250, 250, 0.3);
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 5px;
 }
 
 .mainImg {
@@ -8593,12 +8592,11 @@ ul {
 }
 
 .center-text {
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 400px;
-  background-color: rgba(250, 250, 250, 0.7);
+  background-color: #fafafa;
   color: black;
 }
 .center-text > p:nth-child(2) > a {
@@ -8610,17 +8608,23 @@ ul {
 
 .coffee-text {
   display: flex;
+  text-decoration: double;
   justify-content: center;
   flex-direction: column;
   height: auto;
-  background-color: rgba(250, 250, 250, 0.7);
+  background-color: #fafafa;
   color: black;
-  font-family: "Roboto", sans-serif;
+}
+.coffee-text > p > a {
+  color: black;
+}
+.coffee-text > p > a:hover {
+  color: grey;
 }
 
 /*Gallery*/
 .section-4 {
-  background: url("/assets/gallery-bg.jpg") no-repeat bottom center/cover;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/1fe11cb17cc3f7e0b08ad474d58d6ae6/5E5AD5A2/t51.2885-15/e35/50645541_407151643424509_6536306346115409950_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=101") no-repeat bottom center/cover;
 }
 .section-4 .gallery {
   display: grid;
@@ -8628,83 +8632,83 @@ ul {
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 8px;
 }
-.section-4 .gallery img {
+.section-4 .gallery > a > img {
   width: 100%;
   height: auto;
 }
-.section-4 .gallery img:first-child {
+.section-4 .gallery a:first-child {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.section-4 .gallery img:nth-child(2) {
+.section-4 .gallery a:nth-child(2) {
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.section-4 .gallery img:nth-child(3) {
+.section-4 .gallery a:nth-child(3) {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
 }
-.section-4 .gallery img:nth-child(4) {
+.section-4 .gallery a:nth-child(4) {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 4;
   grid-column-end: 5;
 }
-.section-4 .gallery img:nth-child(5) {
+.section-4 .gallery a:nth-child(5) {
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.section-4 .gallery img:nth-child(6) {
+.section-4 .gallery a:nth-child(6) {
   grid-row-start: 4;
   grid-row-end: 6;
   grid-column-start: 2;
   grid-column-end: 3;
 }
-.section-4 .gallery img:nth-child(7) {
+.section-4 .gallery a:nth-child(7) {
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.section-4 .gallery img:nth-child(8) {
+.section-4 .gallery a:nth-child(8) {
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 4;
   grid-column-end: 5;
 }
-.section-4 .gallery img:nth-child(9) {
+.section-4 .gallery a:nth-child(9) {
   grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.section-4 .gallery img:nth-child(10) {
+.section-4 .gallery a:nth-child(10) {
   grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.section-4 .gallery img:nth-child(11) {
+.section-4 .gallery a:nth-child(11) {
   grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 4;
   grid-column-end: 5;
 }
-.section-4 .gallery img:nth-child(12) {
+.section-4 .gallery a:nth-child(12) {
   grid-row-start: 6;
   grid-row-end: 7;
   grid-column-start: 3;
   grid-column-end: 4;
 }
-.section-4 .gallery img:nth-child(13) {
+.section-4 .gallery a:nth-child(13) {
   grid-row-start: 6;
   grid-row-end: 7;
   grid-column-start: 4;
@@ -8717,18 +8721,18 @@ ul {
   width: 100%;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .aboutSection {
   right: 0;
   margin-top: 5%;
   padding: 5px 15px 5px 15px;
-  background-color: rgba(233, 233, 233, 0.8);
+  background-color: rgba(233, 233, 233, 0.9);
   text-align: center;
   width: auto;
   height: auto;
   margin-left: 70px;
-  font-family: "Roboto", sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
   display: inline-block;
@@ -8818,27 +8822,23 @@ ul {
 }
 
 .abouttext > h1 {
-  font-family: "Roboto";
   text-align: center;
   font-size: 50px;
   margin-top: 20%;
 }
 
 .abouttext > p {
-  font-family: "Roboto";
   font-size: 18px;
   margin-top: 4%;
 }
 
 .abouttext-2 > h1 {
-  font-family: "Roboto";
   text-align: center;
   font-size: 50px;
   margin-top: 20%;
 }
 
 .abouttext-2 > p {
-  font-family: "Roboto";
   font-size: 18px;
   margin-top: 4%;
 }
@@ -8846,19 +8846,20 @@ ul {
 /*Menu Page*/
 .menuSection {
   right: 0;
-  margin-top: 16%;
-  margin-bottom: 16%;
+  margin-top: 7%;
+  margin-bottom: 7%;
   bottom: 0;
   padding: 5px 15px 5px 15px;
-  overflow: none;
+  overflow: hidden;
   text-align: center;
   width: auto;
   display: inline-block;
   width: 70%;
   margin-left: 80px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 18px;
 }
 
 .menu-bg > .container {
@@ -8867,32 +8868,87 @@ ul {
 
 .card1 {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
   position: relative;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/65d24ac0f1482342cb4702decb5e1d14/5E89F022/t51.2885-15/fr/e15/s1080x1080/51045596_239820476895792_3655580631487719951_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=100") no-repeat center/cover;
+}
+.card1 h1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 100px;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 8rem;
+  filter: invert(1) grayscale(6) contrast(9) drop-shadow(0.1em 0.1em black);
+  mix-blend-mode: hard-light;
 }
 
 .card2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
   width: 100%;
   height: 100%;
   text-align: center;
+  overflow: hidden;
   transition: transform 0.2s;
   position: relative;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/8a1f315f8b8479c0024095ec6db5139f/5E4BB603/t51.2885-15/fr/e15/s1080x1080/44586829_563926367370542_4117340264207468749_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=102") no-repeat center/cover;
+  background-position: 0 30%;
+}
+.card2 h1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 80px;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 8rem;
+  filter: invert(1) grayscale(6) contrast(9) drop-shadow(0.1em 0.1em black);
+  mix-blend-mode: hard-light;
 }
 
 .card3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
   position: relative;
+  background: url("https://scontent-syd2-1.cdninstagram.com/vp/b4bc3be458e2f722187bb5f0e12b247f/5E502E2D/t51.2885-15/fr/e15/s1080x1080/54732509_354187748562356_7966261868687320277_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=108") no-repeat center/cover;
+}
+.card3 h1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 90px;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 8rem;
+  filter: invert(1) grayscale(6) contrast(9) drop-shadow(0.1em 0.1em black);
+  mix-blend-mode: hard-light;
 }
 
 .card1:hover {
@@ -8926,7 +8982,7 @@ ul {
 }
 
 .ctr {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -8998,16 +9054,16 @@ ul {
 }
 
 .formstyle {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px 14px 20px 14px;
+  background-color: #353535;
+  padding: 20px 14px 90px 14px;
   border-radius: 10px;
 }
 
 .submitbtn-style {
   background-color: black;
-  border: none;
+  border: 1px white solid;
   color: white;
-  padding: 4px 27px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -9059,10 +9115,15 @@ ul {
   text-align: center;
   line-height: 0.4rem;
   font-size: 10px;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: black;
   color: white;
+}
+.footer p:nth-child(2) {
+  font-size: 8px;
 }
 
 /*CSS changes when topNav activated*/
@@ -9255,20 +9316,17 @@ ul {
   }
 
   .abouttext h1 {
-    font-family: "Roboto";
     text-align: center;
     font-size: 37px;
     margin-top: 16%;
   }
 
   .abouttext p {
-    font-family: "Roboto";
     text-align: center;
     font-size: 14px;
   }
 
   .abouttext-2 p {
-    font-family: "Roboto";
     text-align: center;
     font-size: 14px;
   }
@@ -9287,11 +9345,38 @@ ul {
   .menuSection {
     right: 10%;
     left: 10%;
-    max-width: 90%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .card1 h1 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 8rem;
+  }
+
+  .card2 h1 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 8rem;
+  }
+
+  .card3 h1 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 8rem;
   }
 
   /*Catering*/
@@ -9356,9 +9441,27 @@ ul {
     top: 0;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 5px;
     bottom: 0;
-    width: 80%;
+    margin-top: 20%;
+    width: 90%;
+  }
+
+  .card1 {
+    margin-bottom: 20px;
+  }
+  .card1 h1 {
+    padding-top: 120px;
+  }
+
+  .card2 {
+    margin-bottom: 20px;
+  }
+  .card2 h1 {
+    padding-top: 100px;
+  }
+
+  .card3 h1 {
+    padding-top: 150px;
   }
 
   .menu-text {
@@ -9494,6 +9597,24 @@ ul {
 }
 
 @media screen and (max-width: 414px) {
+  .card1 h1 {
+    padding: 0;
+    font-size: 30px;
+    line-height: 4rem;
+  }
+
+  .card2 h1 {
+    padding: 0;
+    font-size: 22px;
+    line-height: 4rem;
+  }
+
+  .card3 h1 {
+    padding: 0;
+    font-size: 30px;
+    line-height: 4rem;
+  }
+
   .cateringSection {
     grid-template-rows: repeat(1, 1fr);
     margin-top: 40%;
@@ -9539,6 +9660,162 @@ ul {
 
   .aboutSection {
     margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .navlinks {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .navlinks a {
+    font-size: 20px;
+    line-height: 2.8rem;
+  }
+
+  .contactinfo div:first-child {
+    font-size: 17px;
+    line-height: 2.3rem;
+  }
+
+  .contactinfo div:nth-child(2) {
+    font-size: 17px;
+    line-height: 2.3rem;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .frontBanner {
+    padding: 15px 35px 15px 35px;
+  }
+
+  .frontBanner > h1 {
+    font-size: 38px;
+  }
+
+  .frontBanner > p {
+    font-size: 22px;
+  }
+
+  .navlinks {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .navlinks a {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+
+  .contactinfo div:first-child {
+    font-size: 14px;
+    line-height: 2rem;
+  }
+
+  .contactinfo div:nth-child(2) {
+    font-size: 14px;
+    line-height: 2rem;
+  }
+
+  .menu-text {
+    line-height: 13rem;
+  }
+
+  .menu-text > p:first-child {
+    font-size: 70px;
+  }
+
+  .menu-text > a > p {
+    font-size: 150px;
+  }
+
+  .book-text {
+    line-height: 13rem;
+  }
+
+  .book-text > p:first-child {
+    font-size: 150px;
+  }
+
+  .book-text > a > p {
+    font-size: 70px;
+  }
+
+  .center-text {
+    font-size: 22px;
+  }
+
+  .coffee-text {
+    font-size: 22px;
+  }
+
+  .catering-text > h1 {
+    font-size: 65px;
+  }
+
+  .catering-text > p {
+    font-size: 25px;
+  }
+
+  .vtext {
+    font-size: 30px;
+  }
+
+  .vtext-2 {
+    font-size: 30px;
+  }
+
+  .abouttext {
+    margin-top: 5%;
+  }
+
+  .abouttext > h1 {
+    font-size: 70px;
+  }
+
+  .abouttext > p {
+    font-size: 25px;
+  }
+
+  .abouttext-2 {
+    margin-top: 0;
+  }
+
+  .abouttext-2 > h1 {
+    font-size: 70px;
+  }
+
+  .abouttext-2 > p {
+    font-size: 25px;
+  }
+
+  .formstyle {
+    font-size: 20px;
+  }
+
+  /* Overriding styles */
+  ::-webkit-input-placeholder {
+    font-size: 20px !important;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 20px !important;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 20px !important;
+  }
+
+  .menuSection {
+    margin-left: 13%;
+    grid-gap: 30px;
+  }
+
+  .card1 h1 {
+    padding: 80px;
+  }
+
+  .card2 h1 {
+    padding-top: 80px;
   }
 }
 
