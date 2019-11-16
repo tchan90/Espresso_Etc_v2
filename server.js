@@ -29,10 +29,10 @@ app.post("/contactUs", function(req, res) {
       pass: process.env.PASSWORD
     }
   });
-//using fake email address here
+//dummy email address added
   let mailOptions = {
-    from: "fakeemailaddress@gmail.com",
-    to: "fakeemailaddress@gmail.com",
+    from: "quinopyrin@bluecoreshorties.com",
+    to: "quinopyrin@bluecoreshorties.com",
     subject: "Message from Website",
     html: `
     <h1>Message from website</h1>
