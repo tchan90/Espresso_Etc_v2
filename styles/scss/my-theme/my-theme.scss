@@ -1,7 +1,5 @@
 html, body{
     height:100%;
-    overflow-x:none;
-    overflow-y:none;
     scroll-behavior: smooth;
 }
 
@@ -118,14 +116,14 @@ a:hover{
      &:first-child{
         color:$secondary;
         font-size:11px;
-        line-height:0.9rem;
+        line-height:1.3rem;
         text-align:center;
      }
      &:nth-child(2){
         color:rgb(167, 167, 167);
         font-size:11px;
         text-align:center;
-        line-height:0.9rem;
+        line-height:1.3rem;
      }
      & > p{
         margin:0;
@@ -149,6 +147,12 @@ a:hover{
         }
     }
  }
+ .topnav_logo{
+    padding-top:5px;
+    padding-bottom:5px;
+    width:auto;
+    height:auto;
+}
  .scroll-down{
     transform: translate3d(0, -100%, 0);
 }
@@ -209,7 +213,6 @@ a:hover{
             color:grey;
         }
          &>p{
-            line-height:none;
             margin:0;
      }
      }
@@ -221,7 +224,6 @@ a:hover{
     top:50%;
     padding: 5px 15px 5px 15px;
     background-color:rgba(0,0,0,0.6);
-    overflow:none;
     text-align:center;
     width:auto;
     height:auto;
@@ -238,6 +240,7 @@ a:hover{
     &>p{
        color:$secondary;
        font-size:18px;
+       margin:0;
     }
 }
 
@@ -374,6 +377,9 @@ a:hover{
     height:auto;
     background-color:rgba(250, 250, 250, 1);
     color:$primary;
+    &>p{
+        padding:16px 16px;
+    }
     &>p>a{
         color:black;
         &:hover{
@@ -605,11 +611,11 @@ a:hover{
     width:auto;
     display: inline-block;
     width:70%;
-    margin-left:80px;
+    margin-left:130px;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 18px;
+    grid-gap: 24px;
 }
 
  .menu-bg > .container{
@@ -714,7 +720,6 @@ a:hover{
 .cateringSection{
     right:0;
     padding: 5px 15px 5px 15px;
-    overflow:none;
     text-align:center;
     width:auto;
     height:auto;
@@ -777,7 +782,6 @@ a:hover{
 /*Contact*/
 .contactSection{
     padding: 5px 15px 5px 15px;
-    overflow:none;
     text-align:center;
     width:auto;
     height:auto;
@@ -790,7 +794,7 @@ a:hover{
     left:10%;
     margin-right:auto;
     margin-left:auto;
-    margin-top:13%;
+    margin-top:9%;
     margin-bottom:7%;
 }
 
@@ -821,7 +825,6 @@ a:hover{
 }
 .successSection{
     padding: 5px 15px 5px 15px;
-    overflow:none;
     text-align:center;
     width:auto;
     height:auto;
@@ -919,7 +922,7 @@ a:hover{
         -ms-transform: scale(0, 1);
         transform: scale(0, 1);
         -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-        transition: transform 0.8s cubic-bezier(1, 0, 0, 1)
+        transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
    }
     .verticalMenu.responsive a:hover::before{
        -webkit-transform-origin: left top;
@@ -1138,6 +1141,19 @@ a:hover{
     .vert-contactinfo{
         padding-left:20px;
     }
+    .section-1{
+        background-position:20%, 0;
+    }
+    .frontBanner{
+        top:8%;
+        padding:25px 20px;
+        width:80%;
+        right:0;
+        left:0;
+    }
+    .bookinglnk{
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -1319,9 +1335,9 @@ a:hover{
  }
     }
 
-    @media screen and (max-width: 320px){
+    @media only screen and (max-width: 375px){
         .frontBanner{
-            top:40%;
+            top:16%;
         }
         .menu-text{
             line-height:2rem;
@@ -1343,6 +1359,75 @@ a:hover{
         }
         .aboutSection{
             margin-top:15%;
+        }
+        .topnav_logo{
+            width:33%;
+            height:33%;
+            margin-top:7px;
+        }
+        .bookinglnk{
+            font-size:10px;
+        }
+        .cateringSection{
+            margin-top:50%;
+        }
+        .menuSection{
+            width:55%;
+        }
+        .footer{
+            font-size:8px;
+        }
+        .card2>h1{
+            font-size: 20px;
+            line-height:2.5rem;
+        }
+        .card3{
+            margin-top:24px;
+        }
+
+    @media screen and (max-width: 320px){
+        .frontBanner{
+            top:22%;
+        }
+        .menu-text{
+            line-height:2rem;
+        }
+        .book-text{
+            line-height:2rem;
+        }
+         .menu-text>p:first-child{
+            font-size:12px;
+        }
+        .menu-text>a>p{
+            font-size:30px;
+        }
+        .book-text>a>p:first-child{
+            font-size:30px;
+        }
+        .book-text>p:nth-child(2){
+            font-size:12px;
+        }
+        .aboutSection{
+            margin-top:15%;
+        }
+        .center-text{
+            font-size:10px;
+            height: auto;
+        }
+        .coffee-text{
+            font-size:10px;
+            height:auto;
+            padding: 16px 16px;
+        }
+
+        .topnav_logo{
+                margin-top:5px;
+            }
+        .card1>h1{
+            font-size:20px;
+        }
+        .card3>h1{
+            font-size:20px;
         }
     }
 
@@ -1369,7 +1454,7 @@ a:hover{
     
     @media only screen and (min-width:1300px){
         .frontBanner{
-            padding: 15px 35px 15px 35px;
+            padding: 35px 15px;
         }
         .frontBanner>h1{
             font-size: 38px;
@@ -1478,4 +1563,4 @@ a:hover{
             }
         }
     }
-    
+}

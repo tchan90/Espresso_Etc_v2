@@ -8230,8 +8230,6 @@ h3 {
 }
 html, body {
   height: 100%;
-  overflow-x: none;
-  overflow-y: none;
   scroll-behavior: smooth;
 }
 
@@ -8350,14 +8348,14 @@ ul {
 .contactinfo div:first-child {
   color: white;
   font-size: 11px;
-  line-height: 0.9rem;
+  line-height: 1.3rem;
   text-align: center;
 }
 .contactinfo div:nth-child(2) {
   color: #a7a7a7;
   font-size: 11px;
   text-align: center;
-  line-height: 0.9rem;
+  line-height: 1.3rem;
 }
 .contactinfo div > p {
   margin: 0;
@@ -8379,6 +8377,13 @@ ul {
 }
 .topnav i:hover {
   color: #6d6d6d;
+}
+
+.topnav_logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+  height: auto;
 }
 
 .scroll-down {
@@ -8446,7 +8451,6 @@ ul {
   color: grey;
 }
 .socialinks > a > p {
-  line-height: none;
   margin: 0;
 }
 
@@ -8456,7 +8460,6 @@ ul {
   top: 50%;
   padding: 5px 15px 5px 15px;
   background-color: rgba(0, 0, 0, 0.6);
-  overflow: none;
   text-align: center;
   width: auto;
   height: auto;
@@ -8474,6 +8477,7 @@ ul {
 .frontBanner > p {
   color: white;
   font-size: 18px;
+  margin: 0;
 }
 
 .arrowIcon {
@@ -8614,6 +8618,9 @@ ul {
   height: auto;
   background-color: #fafafa;
   color: black;
+}
+.coffee-text > p {
+  padding: 16px 16px;
 }
 .coffee-text > p > a {
   color: black;
@@ -8855,11 +8862,11 @@ ul {
   width: auto;
   display: inline-block;
   width: 70%;
-  margin-left: 80px;
+  margin-left: 130px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 18px;
+  grid-gap: 24px;
 }
 
 .menu-bg > .container {
@@ -8967,7 +8974,6 @@ ul {
 .cateringSection {
   right: 0;
   padding: 5px 15px 5px 15px;
-  overflow: none;
   text-align: center;
   width: auto;
   height: auto;
@@ -9036,7 +9042,6 @@ ul {
 /*Contact*/
 .contactSection {
   padding: 5px 15px 5px 15px;
-  overflow: none;
   text-align: center;
   width: auto;
   height: auto;
@@ -9049,7 +9054,7 @@ ul {
   left: 10%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 13%;
+  margin-top: 9%;
   margin-bottom: 7%;
 }
 
@@ -9081,7 +9086,6 @@ ul {
 
 .successSection {
   padding: 5px 15px 5px 15px;
-  overflow: none;
   text-align: center;
   width: auto;
   height: auto;
@@ -9188,7 +9192,7 @@ ul {
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-    transition: transform 0.8s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
   }
 
   .verticalMenu.responsive a:hover::before {
@@ -9435,6 +9439,22 @@ ul {
   .vert-contactinfo {
     padding-left: 20px;
   }
+
+  .section-1 {
+    background-position: 20%, 0;
+  }
+
+  .frontBanner {
+    top: 8%;
+    padding: 25px 20px;
+    width: 80%;
+    right: 0;
+    left: 0;
+  }
+
+  .bookinglnk {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menuSection {
@@ -9629,9 +9649,9 @@ ul {
     display: none !important;
   }
 }
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .frontBanner {
-    top: 40%;
+    top: 16%;
   }
 
   .menu-text {
@@ -9661,8 +9681,95 @@ ul {
   .aboutSection {
     margin-top: 15%;
   }
+
+  .topnav_logo {
+    width: 33%;
+    height: 33%;
+    margin-top: 7px;
+  }
+
+  .bookinglnk {
+    font-size: 10px;
+  }
+
+  .cateringSection {
+    margin-top: 50%;
+  }
+
+  .menuSection {
+    width: 55%;
+  }
+
+  .footer {
+    font-size: 8px;
+  }
+
+  .card2 > h1 {
+    font-size: 20px;
+    line-height: 2.5rem;
+  }
+
+  .card3 {
+    margin-top: 24px;
+  }
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (max-width: 375px) and (max-width: 320px) {
+  .frontBanner {
+    top: 22%;
+  }
+
+  .menu-text {
+    line-height: 2rem;
+  }
+
+  .book-text {
+    line-height: 2rem;
+  }
+
+  .menu-text > p:first-child {
+    font-size: 12px;
+  }
+
+  .menu-text > a > p {
+    font-size: 30px;
+  }
+
+  .book-text > a > p:first-child {
+    font-size: 30px;
+  }
+
+  .book-text > p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .aboutSection {
+    margin-top: 15%;
+  }
+
+  .center-text {
+    font-size: 10px;
+    height: auto;
+  }
+
+  .coffee-text {
+    font-size: 10px;
+    height: auto;
+    padding: 16px 16px;
+  }
+
+  .topnav_logo {
+    margin-top: 5px;
+  }
+
+  .card1 > h1 {
+    font-size: 20px;
+  }
+
+  .card3 > h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 2000px) {
   .navlinks {
     padding: 10px 20px 10px 20px;
   }
@@ -9682,9 +9789,9 @@ ul {
     line-height: 2.3rem;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 375px) and (min-width: 1300px) {
   .frontBanner {
-    padding: 15px 35px 15px 35px;
+    padding: 35px 15px;
   }
 
   .frontBanner > h1 {
