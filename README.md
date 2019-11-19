@@ -14,7 +14,7 @@ Espresso Etc is a client project for Melbourne-based cafe 'Espresso Etc'. This i
 - Scroll reveal feature added to the top navigation bar when window reduced 
 - Lightbox feature added to the gallery images
 - SASS implemented
-- Some small changes to the stylings 
+- Some minor changes to the stylings 
 - Email address removed from nodemailer and replaced with a dummy address, so submitting the form won't work.
 
 ### Image source
